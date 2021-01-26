@@ -1,0 +1,12 @@
+.room{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #219fd0;
+
+  > .ui.button {
+    padding: 30px;
+    font-size: 30px;
+  }
+}

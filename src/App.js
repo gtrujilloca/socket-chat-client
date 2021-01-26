@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import Login from './componets/Login/Login';
+import Room from './componets/Room/Room';
 
-function App() {
+export const App = () => {
+
+  const [username, setUsername] = useState(null);
+  const [room, setRoom] = useState(null)
+
+  const hanldlerComponent = () =>{
+    if(!username && !room) return <Login setusername={setUsername}/>
+    else if (username && !room) return <Room setRoom={setRoom}/>;
+    else return "Chat...";
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My app</h1>
     </div>
-  );
+  )
 }
 
 export default App;
