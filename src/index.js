@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
-import Login from './componets/Login/Login';
+// import Login from './componets/Login/Login';
 
 ReactDOM.render(
-    <Login />,
+    <App />,
     document.getElementById('root')
 );
 

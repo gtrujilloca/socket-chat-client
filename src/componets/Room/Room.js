@@ -9,9 +9,9 @@ const Room = (props) => {
   return (
     <div className="room">
       <Container>
-        <Button>React</Button>
-        <Button>Vue</Button>
-        <Button>Angular</Button>
+        <Button onClick={() => setRoom('react')}>React</Button>
+        <Button onClick={() => setRoom('vue')}>Vue</Button>
+        <Button onClick={() => setRoom('angular')}>Angular</Button>
       </Container>
     </div>
   )

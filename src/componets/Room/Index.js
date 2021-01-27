@@ -1,1 +1,1 @@
-export {default} = './Room'
+export {default} from './Room'
